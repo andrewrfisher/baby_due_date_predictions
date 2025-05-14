@@ -11,6 +11,21 @@ h1 {
     font-family: 'Pacifico', cursive;
     font-size: 2.5em;
     margin-top: 40px;
+    text-align: center;
+    color: #d85b9c;
+}
+h2  {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5em;
+    margin-top: 10px;
+    text-align: center;
+    color: #d85b9c;
+}
+h4 {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5em;
+    padding-top: 10px;
+    text-align: center;
     color: #d85b9c;
 }
 
