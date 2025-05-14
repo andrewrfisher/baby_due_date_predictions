@@ -1,1 +1,3 @@
 gunicorn==22.0.0
+flask
+flask-mail
