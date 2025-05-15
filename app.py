@@ -25,20 +25,21 @@ def index():
         email = request.form['email']
         date = request.form['due_date']
         time = request.form['due_time']
+        weight = request.form['due_weight']
 
         # Save to CSV file
         with open('guesses.csv', 'a', newline='') as f:
             writer = csv.writer(f)
-            writer.writerow([name, email, date, time])
+            writer.writerow([name, email, date, time, weight])
 
         # Optional: Send email to yourself
         msg = Message('New Baby Due Date Prediction Submission',
                       sender='babyguesser@gmail.com',
                       recipients=['andrewnorly@gmail.com'])
-        msg.body = f'Name: {name}\nEmail: {email}\nDate: {date}\nTime: {time}'
+        msg.body = f'Name: {name}\nEmail: {email}\nDate: {date}\nTime: {time}\nWeight: {weight}'
         mail.send(msg)
 
-        flash("Thanks for guessing Lil Fishy's due date. We'll let you know who wins on July 1st!")
+        flash("Thanks for guessing Lil Fishy's birthday. We'll let you know who wins on July 1st!")
 
         return redirect('/')
 
