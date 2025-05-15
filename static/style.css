@@ -24,6 +24,9 @@ h1, label, input, button, p {
     font-family: 'Nunito', sans-serif;
 }
 
+footer  {
+    margin-bottom: 20px;
+}
 /* Custom pink button */
 .btn-pink {
     background-color: #f48fb1;
