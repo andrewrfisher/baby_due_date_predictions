@@ -48,3 +48,22 @@ input, select {
 form {
     box-shadow: 0 8px 20px rgba(216, 91, 156, 0.1);
 }
+
+/* Make form spacing responsive */
+@media (max-width: 576px) {
+    .form-label {
+        font-size: 0.95rem;
+    }
+
+    .btn-pink {
+        font-size: 0.95rem;
+    }
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    p.lead {
+        font-size: 1rem;
+    }
+}
